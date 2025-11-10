@@ -50,7 +50,7 @@ tombolKetikanIgd.addEventListener('click', () => {
     let hasilSpo2 = fungsiSpo2(spo2.value);
     let hasilOksigenasi = fungsiOksigenasi(oksigenasi.value);
     let hasilDiagnosis = fungsiDiagnosis(diagnosis.value);
-    let hasilPlan = fungsiPlanOp(plan.value);
+    let hasilPlan = fungsiPlanIgd(plan.value);
 
     ketikan = document.createElement('p');
     ketikan.innerHTML +=
