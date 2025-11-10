@@ -1,4 +1,5 @@
 let kontainerJudul = document.querySelector('#kontainerJudul');
+let setPlaceholder = document.querySelector('#setPlaceholder');
 
 let igd = document.querySelector('#igd');
 let spesialis = document.querySelector('#spesialis');
@@ -18,6 +19,9 @@ kontainerJudul.addEventListener('click', () => {
   document.querySelector('#kontainerTextarea').classList.toggle('none');
 
 })
+
+const placeholderText ='PAGI:\n- SOAP\n- UPDATE HOPE\n- SIAPIN OPERAN\n\nMALAM: \n- SOAP\n- LAPOR ANES\n- MORPOT\n- UPDATE HOPE\n- SIAPIN OPERAN';
+setPlaceholder.setAttribute('placeholder', placeholderText);
 
 // ===
 
