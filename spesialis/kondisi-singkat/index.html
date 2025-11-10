@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SW-App</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="kontainerJudul">
+      <h1>Kondisi Singkat</h1>
+    </div>
+
+    <div id="kontainerForm">
+      <form class="pengaturanForm" action="index.html" method="post">
+        <div class="">
+          <label for="pssom">P/S/SO/M:</label>
+          <input type="text" name="pssom" value="" id="pssom">
+        </div>
+        <div class="">
+          <label for="nama">Nama:</label>
+          <input type="text" name="nama" value="" id="nama">
+        </div>
+        <div class="">
+          <label for="kelamin">Kelamin:</label>
+          <input type="text" name="kelamin" value="" id="kelamin">
+        </div>
+        <div class="">
+          <label for="umur">Umur:</label>
+          <input type="text" name="umur" value="" id="umur">
+        </div>
+        <div class="">
+          <label for="payer">Payer:</label>
+          <input type="text" name="payer" value="" id="payer" placeholder="###">
+        </div>
+        <div class="">
+          <label for="tujuan">Tujuan:</label>
+          <input type="text" name="tujuan" value="" id="tujuan">
+        </div>
+        <div class="">
+          <label for="toggleDiagnosis"></label>
+          <input type="checkbox" name="toggleDiagnosis" value="" id="toggleDiagnosis">
+          <label for="diagnosis">Dx:</label>
+          <textarea name="diagnosis" rows="8" cols="25" id="diagnosis"></textarea>
+        </div>
+        <div class="">
+          <label for="kondisi">Keterangan:</label>
+          <textarea name="kondisi" rows="4" cols="25" id="kondisi"></textarea>
+        </div>
+        <button type="button" name="tombolKetikanKondisi" id="tombolKetikanKondisi">Buat Ketikan Kondisi Singkat</button>
+        <button type="button" name="tombolReset" id="tombolReset">Reset</button>
+        <button type="button" name="tombolHome" id="tombolHome"><a href="../../index.html">Home</a></button>
+      </form>
+    </div>
+
+    <div class="none" id="kontainerKetikan">
+
+    </div>
+
+    <div id="kontainerTextarea" class="none">
+      <textarea name="name" rows="30" cols="80" style="background-color: #F5F5DC"></textarea>
+    </div>
+
+  </body>
+
+  <script type="text/javascript" src="../../script/fungsiGlobal.js">
+
+  </script>
+
+  <script type="text/javascript" src="script.js">
+
+  </script>
+
+</html>

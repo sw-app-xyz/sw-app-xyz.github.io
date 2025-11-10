@@ -1,0 +1,70 @@
+body {
+  background-color: #bdc3c7;
+  text-align: center;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#kontainerJudul {
+  background-color: #ff6961;
+  margin-top: 20px;
+}
+
+#kontainerForm {
+  background-color: #ffb480;
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  min-width: 320px;
+  border: 4px solid #34495e;
+  border-radius: 20px;
+}
+
+#kontainerKetikan {
+  background-color: #f8f38d;
+  padding: 20px;
+}
+
+#kontainerTextarea {
+  background-color: #42d6a4;
+  padding: 15px;
+}
+
+.pengaturanForm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#kontainerJudul,
+#kontainerForm,
+#kontainerKetikan,
+#kontainerTextarea {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  min-width: 320px;
+  border: 4px solid #34495e;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+#tombolKetikanLaporan, #tombolReset, #tombolHome {
+  align-self: center;
+}
+
+#tombolKetikanLaporan {
+  margin-top: 5px;
+}
+
+.none {
+  display: none !important;
+}

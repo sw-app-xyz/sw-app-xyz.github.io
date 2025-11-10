@@ -1,0 +1,66 @@
+body {
+  background-color: #bdc3c7;
+  text-align: center;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#kontainerJudul {
+  background-color: #ff6961;
+  margin-top: 20px;
+}
+
+#kontainerIsi {
+  background-color: #ffb480;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  min-width: 320px;
+  border: 4px solid #34495e;
+  border-radius: 20px;
+}
+
+#kontainerTextarea {
+  background-color: #42d6a4;
+  padding: 15px;
+}
+
+#kontainerJudul,
+#kontainerIsi,
+#kontainerTextarea {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  min-width: 320px;
+  border: 4px solid #34495e;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.none {
+  display: none !important;
+}
+
+#daftarBerlanjut {
+  padding-left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+#kontainerIsi h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+#daftarBerlanjut li {
+  text-align: center;
+  margin: 5px 0;
+  list-style-position: inside;
+}

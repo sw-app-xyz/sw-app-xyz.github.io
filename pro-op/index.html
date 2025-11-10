@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SW-App</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="kontainerJudul">
+      <h1>Pro Op</h1>
+    </div>
+
+    <div id="kontainerForm">
+      <form class="pengaturanForm" action="index.html" method="post">
+        <div class="">
+          <label for="pssom">P/S/SO/M:</label>
+          <input type="text" name="pssom" value="" id="pssom">
+        </div>
+        <div class="">
+          <label for="ot">Ketikan OT:</label>
+          <textarea name="ot" rows="4" cols="25" id="ot"></textarea>
+        </div>
+        <div class="">
+          <label for="tindakan">Tindakan:</label>
+          <input type="text" name="tindakan" value="" id="tindakan">
+        </div>
+        <div class="">
+          <label for="tanggal">Tanggal:</label>
+          <input type="text" name="tanggal" value="" id="tanggal">
+        </div>
+        <div class="">
+          <label for="bulan">Bulan:</label>
+          <input type="text" name="bulan" value="" id="bulan">
+        </div>
+        <div class="">
+          <label for="jam">Jam:</label>
+          <input type="text" name="jam" value="" id="jam">
+        </div>
+        <div class="">
+          <label for="nama">Nama:</label>
+          <input type="text" name="nama" value="" id="nama">
+        </div>
+        <div class="">
+          <label for="kelamin">Kelamin:</label>
+          <input type="text" name="kelamin" value="" id="kelamin">
+        </div>
+        <div class="">
+          <label for="umur">Umur:</label>
+          <input type="text" name="umur" value="" id="umur">
+        </div>
+        <div class="">
+          <label for="payer">Payer:</label>
+          <input type="text" name="payer" value="" id="payer" placeholder="###">
+        </div>
+        <div class="">
+          <label for="operator">dr. Operator:</label>
+          <input type="text" name="operator" value="" id="operator">
+        </div>
+        <div class="">
+          <label for="anestesi">dr. Anestesi:</label>
+          <input type="text" name="anestesi" value="" id="anestesi">
+        </div>
+        <div class="">
+          <label for="interna">dr. Interna:</label>
+          <input type="text" name="interna" value="" id="interna">
+        </div>
+        <div class="">
+          <label for="kardio">dr. Jantung:</label>
+          <input type="text" name="kardio" value="" id="kardio" placeholder="###">
+        </div>
+        <div class="">
+          <label for="toggleDiagnosis"></label>
+          <input type="checkbox" name="toggleDiagnosis" value="" id="toggleDiagnosis">
+          <label for="diagnosis">Dx:</label>
+          <textarea name="diagnosis" rows="8" cols="25" id="diagnosis"></textarea>
+        </div>
+        <div class="">
+          <label for="keluhan">Keluhan:</label>
+          <textarea name="keluhan" rows="4" cols="25" id="keluhan"></textarea>
+        </div>
+        <div class="">
+          <label for="ku">KU:</label>
+          <input type="text" name="ku" value="" id="ku" placeholder="###">
+        </div>
+        <div class="">
+          <label for="tds">TDS:</label>
+          <input type="text" name="tds" value="" id="tds">
+        </div>
+        <div class="">
+          <label for="tdd">TDD:</label>
+          <input type="text" name="tdd" value="" id="tdd">
+        </div>
+        <div class="">
+          <label for="hr">HR:</label>
+          <input type="text" name="hr" value="" id="hr">
+        </div>
+        <div class="">
+          <label for="rr">RR:</label>
+          <input type="text" name="rr" value="" id="rr" placeholder="###">
+        </div>
+        <div class="">
+          <label for="s">Suhu:</label>
+          <input type="text" name="s" value="" id="s">
+        </div>
+        <div class="">
+          <label for="spo2">SpO2:</label>
+          <input type="text" name="spo2" value="" id="spo2">
+        </div>
+        <div class="">
+          <label for="oksigenasi">Oksigenasi:</label>
+          <input type="text" name="oksigenasi" value="" id="oksigenasi" placeholder="###">
+        </div>
+        <div class="">
+          <label for="plan">Plan:</label>
+          <textarea name="plan" rows="4" cols="25" id="plan" placeholder="auto correct"></textarea>
+        </div>
+        <button type="button" name="tombolKetikanProOp" id="tombolKetikanProOp">Buat Ketikan Pro Op</button>
+        <button type="button" name="tombolReset" id="tombolReset">Reset</button>
+        <button type="button" name="tombolHome" id="tombolHome"><a href="../index.html">Home</a></button>
+      </form>
+    </div>
+
+    <div class="none"id="kontainerKetikanOperator">
+
+    </div>
+
+    <div class="none"id="kontainerKetikanAnestesi">
+
+    </div>
+
+    <div class="none"id="kontainerKetikanInterna">
+
+    </div>
+
+    <div class="none"id="kontainerKetikanKardio">
+
+    </div>
+
+    <div id="kontainerTextarea" class="none">
+      <textarea name="name" rows="30" cols="80" style="background-color: #F5F5DC"></textarea>
+    </div>
+
+  </body>
+
+  <script type="text/javascript" src="../script/fungsiGlobal.js">
+
+  </script>
+
+  <script type="text/javascript" src="script.js">
+
+  </script>
+
+</html>
