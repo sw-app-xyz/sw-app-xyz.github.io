@@ -30,7 +30,7 @@ let fungsiOt = (ot) => {
 
 // NAMA KAPITAL
 let fungsiNama = (namaLengkap) => {
-  let namaPerKata = namaLengkap.split(" ");
+  let namaPerKata = namaLengkap.toLowerCase().split(" ");
   return namaPerKata.map((nama) => {
     return nama[0].toUpperCase() + nama.substring(1);
   }).join(" ");
@@ -60,92 +60,93 @@ let fungsiPayer = (x) => {
 
 // KODE SPESIALIS
 let fungsiDokter = (x) => {
+  x = x.toLowerCase();
   // IPD
-  if (x === "tya" || x === "TYA") {
+  if (x === "tya") {
     return "Tyas, Sp.PD"
   }
-  else if (x === "wid" || x === "WID") {
+  else if (x === "wid") {
     return "Widodo, Sp.PD"
   }
-  else if (x === "adh" || x === "ADH") {
+  else if (x === "adh") {
     return "Adhita, Sp.PD"
   }
-  else if (x === "cah" || x === "CAH") {
+  else if (x === "cah") {
     return "Cahyo, Sp.PD"
   }
   // JANTUNG
-  else if (x === "ani" || x === "ANI") {
+  else if (x === "ani") {
     return "Anindita, Sp.JP"
   }
   // PARU
-  else if (x === "wil" || x === "WIL") {
+  else if (x === "wil") {
     return "Wildan, Sp.P"
   }
-  else if (x === "col" || x === "COL") {
+  else if (x === "col") {
     return "Colin, Sp.P"
   }
   // ANAK
-  if (x === "dar" || x === "DAR") {
+  if (x === "dar") {
     return "Dara, Sp.A"
   }
-  else if (x === "idh" || x === "IDH") {
+  else if (x === "idh") {
     return "Idha, Sp.A"
   }
   // OBSGIN
-  if (x === "sap" || x === "SAP") {
+  if (x === "sap") {
     return "Sapar, Sp.OG"
   }
-  else if (x === "dan" || x === "DAN") {
+  else if (x === "dan") {
     return "Danu, Sp.OG"
   }
-  else if (x === "yun" || x === "YUN") {
+  else if (x === "yun") {
     return "Yunita, Sp.OG"
   }
   // BEDAH
-  else if (x === "dud" || x === "DUD") {
+  else if (x === "dud") {
     return "Dudy, Sp.B"
   }
-  else if (x === "rez" || x === "REZ") {
+  else if (x === "rez") {
     return "Reza, Sp.B"
   }
   // ORTOPEDI
-  else if (x === "ric" || x === "RIC") {
+  else if (x === "ric") {
     return "Ricky, Sp.OT"
   }
-  else if (x === "tri" || x === "TRI") {
+  else if (x === "tri") {
     return "Trimanto, Sp.OT"
   }
   // UROLOGI
-  else if (x === "rad" || x === "RAD") {
+  else if (x === "rad") {
     return "Radityo, Sp.U"
   }
   // ANESTESI
-  else if (x === "riz" || x === "RIZ") {
+  else if (x === "riz") {
     return "Rizky, Sp.An"
   }
-  else if (x === "ikr" || x === "IKR") {
+  else if (x === "ikr" || x === "iqr") {
     return "Ikrar, Sp.An"
   }
   // SARAF
-  else if (x === "tan" || x === "TAN") {
+  else if (x === "tan") {
     return "Tantra, Sp.S"
   }
-  else if (x === "sol" || x === "SOL") {
+  else if (x === "sol") {
     return "Soleh, Sp.S"
   }
   // MATA
-  else if (x === "ern" || x === "ERN") {
+  else if (x === "ern") {
     return "Ernes, Sp.M"
   }
   // THT
-  else if (x === "bus" || x === "BUS") {
+  else if (x === "bus") {
     return "Bustanul, Sp.THT"
   }
-  else if (x === "kom" || x === "KOM") {
+  else if (x === "kom") {
     return "Komang, Sp.THT"
   }
   // KFR
-  else if (x === "rat" || x === "RAT") {
+  else if (x === "rat") {
     return "Ratna, Sp.KFR"
   }
   return ""
