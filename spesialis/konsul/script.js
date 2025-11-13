@@ -62,7 +62,7 @@ tombolKetikanKonsul.addEventListener('click', () => {
       <br>
       <br>*${hasilNama}, ${hasilKelamin}, ${hasilUmur} th, ${hasilPayer}*
       <br>
-      <br>*DPJP: ${hasilDpjp}*
+      <br>*DPJP: dr. ${hasilDpjp}*
       <br>*Alasan konsultasi: ${hasilAlasan}*
       <br>
       <br>*Diagnosis:*
@@ -154,3 +154,4 @@ kontainerJudul.addEventListener('click', () => {
   document.querySelector('#kontainerTextarea').classList.toggle('none');
 
 })
+
