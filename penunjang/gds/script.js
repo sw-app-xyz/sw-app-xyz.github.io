@@ -37,41 +37,78 @@ tombolKetikanGds.addEventListener('click', () => {
     let hasilTx = tx.value;
 
     // CEK DOKTER
-    if (hasilTujuan !== '') {
-      ketikan = document.createElement('p');
-      ketikan.innerHTML +=
-      `Selamat ${hasilPssom} dokter ${hasilTujuan}, mohon maaf mengganggu waktunya. Izin melaporkan hasil GDS pasien:
-      <br>
-      <br>*${hasilNama}, ${hasilKelamin}, ${hasilUmur} th, ${hasilPayer}*
-      <br>
-      <br>*Diagnosis:*
-      <br>${hasilDiagnosis}
-      <br>
-      <br>*GDS jam ${hasilJam} = ${hasilGds} mg/dl*
-      <br>Terapi DM saat ini: ${hasilTx}
-      <br>
-      <br>Mohon advice dan arahan selanjutnya dokter
-      <br>Maturnuwun dokter<br>
-      `
-      kontainerKetikan.appendChild(ketikan);
+    if (hasilTx !== '') {
+      if (hasilTujuan !== '') {
+        ketikan = document.createElement('p');
+        ketikan.innerHTML +=
+        `Selamat ${hasilPssom} dokter ${hasilTujuan}, mohon maaf mengganggu waktunya. Izin melaporkan hasil GDS pasien:
+        <br>
+        <br>*${hasilNama}, ${hasilKelamin}, ${hasilUmur} th, ${hasilPayer}*
+        <br>
+        <br>*Diagnosis:*
+        <br>${hasilDiagnosis}
+        <br>
+        <br>*GDS jam ${hasilJam} = ${hasilGds} mg/dl*
+        <br>Terapi DM saat ini: ${hasilTx}
+        <br>
+        <br>Mohon advice dan arahan selanjutnya dokter
+        <br>Maturnuwun dokter<br>
+        `
+        kontainerKetikan.appendChild(ketikan);
+      } else {
+        ketikan = document.createElement('p');
+        ketikan.innerHTML +=
+        `Selamat ${hasilPssom} dokter, mohon maaf mengganggu waktunya. Izin melaporkan hasil GDS pasien:
+        <br>
+        <br>*${hasilNama}, ${hasilKelamin}, ${hasilUmur} th, ${hasilPayer}*
+        <br>
+        <br>*Diagnosis:*
+        <br>${hasilDiagnosis}
+        <br>
+        <br>*GDS jam ${hasilJam} = ${hasilGds} mg/dl*
+        <br>Terapi DM saat ini: ${hasilTx}
+        <br>
+        <br>Mohon advice dan arahan selanjutnya dokter
+        <br>Maturnuwun dokter<br>
+        `
+        kontainerKetikan.appendChild(ketikan);
+      }
     } else {
-      ketikan = document.createElement('p');
-      ketikan.innerHTML +=
-      `Selamat ${hasilPssom} dokter, mohon maaf mengganggu waktunya. Izin melaporkan hasil GDS pasien:
-      <br>
-      <br>*${hasilNama}, ${hasilKelamin}, ${hasilUmur} th, ${hasilPayer}*
-      <br>
-      <br>*Diagnosis:*
-      <br>${hasilDiagnosis}
-      <br>
-      <br>*GDS jam ${hasilJam} = ${hasilGds} mg/dl*
-      <br>Terapi DM saat ini: ${hasilTx}
-      <br>
-      <br>Mohon advice dan arahan selanjutnya dokter
-      <br>Maturnuwun dokter<br>
-      `
-      kontainerKetikan.appendChild(ketikan);
+      if (hasilTujuan !== '') {
+        ketikan = document.createElement('p');
+        ketikan.innerHTML +=
+        `Selamat ${hasilPssom} dokter ${hasilTujuan}, mohon maaf mengganggu waktunya. Izin melaporkan hasil GDS pasien:
+        <br>
+        <br>*${hasilNama}, ${hasilKelamin}, ${hasilUmur} th, ${hasilPayer}*
+        <br>
+        <br>*Diagnosis:*
+        <br>${hasilDiagnosis}
+        <br>
+        <br>*GDS jam ${hasilJam} = ${hasilGds} mg/dl*
+        <br>
+        <br>Mohon advice dan arahan selanjutnya dokter
+        <br>Maturnuwun dokter<br>
+        `
+        kontainerKetikan.appendChild(ketikan);
+      } else {
+        ketikan = document.createElement('p');
+        ketikan.innerHTML +=
+        `Selamat ${hasilPssom} dokter, mohon maaf mengganggu waktunya. Izin melaporkan hasil GDS pasien:
+        <br>
+        <br>*${hasilNama}, ${hasilKelamin}, ${hasilUmur} th, ${hasilPayer}*
+        <br>
+        <br>*Diagnosis:*
+        <br>${hasilDiagnosis}
+        <br>
+        <br>*GDS jam ${hasilJam} = ${hasilGds} mg/dl*
+        <br>
+        <br>Mohon advice dan arahan selanjutnya dokter
+        <br>Maturnuwun dokter<br>
+        `
+        kontainerKetikan.appendChild(ketikan);
+      }
     }
+
 
     // RESET
     pssom.value = '';
